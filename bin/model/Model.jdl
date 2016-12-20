@@ -1,0 +1,40 @@
+/**
+ * The Student entity.
+ */
+entity Student {
+	firstName String,
+	lastName String,
+	email String,
+	phoneNumber String,
+	hireDate ZonedDateTime,
+	salary Long,
+	commissionPct Long
+}
+
+/**
+ * The Course entity.
+ */
+entity Course {
+	code String,
+	name String,
+	lecturer String,
+	duration Long,
+	minNumberRegistered Long,
+	level CourseLevel,
+    taughtLanguage Language
+	
+}
+
+enum CourseLevel {
+    A1, A2, B1, B2, C1, C2
+}
+enum Language {
+    FRENCH, ENGLISH, SPANISH, CHINESE
+}
+relationship OneToOne {
+	Student{user} to User
+}
+
+relationship ManyToMany {
+	Student{course(name)} to Course{student}
+}
