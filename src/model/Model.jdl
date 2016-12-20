@@ -19,18 +19,17 @@ entity Course {
 	name String,
 	lecturer String,
 	duration Long,
-	minNumberRegistered Long,
+	minNumRegStud Long,
 	level CourseLevel,
-    taughtLanguage Language,
-    asdasd,
-    secondo commit sbagliato
+    taughtLanguage Language
+	
 }
 
 enum CourseLevel {
     A1, A2, B1, B2, C1, C2
 }
 enum Language {
-    FRENCH, ENGLISH, SPANISH, CHINESE
+    ITALIAN, ENGLISH, FRENCH, SPANISH, CHINESE
 }
 relationship OneToOne {
 	Student{user} to User
