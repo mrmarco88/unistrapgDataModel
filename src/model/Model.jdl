@@ -22,7 +22,8 @@ entity Course {
 	minNumberRegistered Long,
 	level CourseLevel,
     taughtLanguage Language,
-    asdasd
+    asdasd,
+    secondo commit sbagliato
 }
 
 enum CourseLevel {
