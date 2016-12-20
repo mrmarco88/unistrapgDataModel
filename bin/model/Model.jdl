@@ -21,8 +21,8 @@ entity Course {
 	duration Long,
 	minNumberRegistered Long,
 	level CourseLevel,
-    taughtLanguage Language
-	
+    taughtLanguage Language,
+    asdasd
 }
 
 enum CourseLevel {
