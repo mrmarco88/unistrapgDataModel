@@ -6,9 +6,8 @@ entity Student {
 	lastName String,
 	email String,
 	phoneNumber String,
-	hireDate ZonedDateTime,
-	salary Long,
-	commissionPct Long
+	birthDate ZonedDateTime,
+	smartCardId Long
 }
 
 /**
